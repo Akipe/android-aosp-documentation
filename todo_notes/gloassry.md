@@ -29,3 +29,5 @@ Telephony :
 * VoWiFi: Short for Voice over WiFi, alternate name for WFC
 * WFC: Short for WiFi Calling
 * RIL: Short for Radio Interface Layer, generally used to refer to the modem interface library or libril, sometimes used to refer to any part or the whole of the Telephony stack
+
+* Android Compatibility Definition Document (CDD) : This document enumerates the requirements that must be met in order for devices to be compatible with the latest version of Android. (pdf)
