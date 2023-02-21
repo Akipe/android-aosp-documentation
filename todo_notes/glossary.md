@@ -31,3 +31,7 @@ Telephony :
 * RIL: Short for Radio Interface Layer, generally used to refer to the modem interface library or libril, sometimes used to refer to any part or the whole of the Telephony stack
 
 * Android Compatibility Definition Document (CDD) : This document enumerates the requirements that must be met in order for devices to be compatible with the latest version of Android. (pdf)
+
+* HAL stands for hardware abstraction layer. Generally it's a piece of software that interacts with a specific piece of hardware and exposes a generic application programming interface for that hardware. That way, any software that wants to use the hardware doesn't have to implement all of the hardware specific features, just utilize the API. For example, Qualcomm's Vulkan drivers act as a HAL upon the Adreno GPU. The programmer doesn't care how the Adreno works, but instead only cares that the HAL and the hardware correctly implement whatever is specified in the API.
+
+* A "blob" in the android context, is just some binary. Often these blobs will interface with some hardware or will implement crucial features that enable some other feature on the phone. The "blobs" we talk about are generally from OEMs and manufacturers that users don't know or care about. One such blob (which you probably don't even know exists!) is the Trustzone blob. Without it, your phone wouldn't boot up, show the display, anything really. What does it do? A ton of stuff, though nothing that the user needs to worry or care about.
