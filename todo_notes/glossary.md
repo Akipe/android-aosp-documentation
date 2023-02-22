@@ -35,3 +35,11 @@ Telephony :
 * HAL stands for hardware abstraction layer. Generally it's a piece of software that interacts with a specific piece of hardware and exposes a generic application programming interface for that hardware. That way, any software that wants to use the hardware doesn't have to implement all of the hardware specific features, just utilize the API. For example, Qualcomm's Vulkan drivers act as a HAL upon the Adreno GPU. The programmer doesn't care how the Adreno works, but instead only cares that the HAL and the hardware correctly implement whatever is specified in the API.
 
 * A "blob" in the android context, is just some binary. Often these blobs will interface with some hardware or will implement crucial features that enable some other feature on the phone. The "blobs" we talk about are generally from OEMs and manufacturers that users don't know or care about. One such blob (which you probably don't even know exists!) is the Trustzone blob. Without it, your phone wouldn't boot up, show the display, anything really. What does it do? A ton of stuff, though nothing that the user needs to worry or care about.
+
+
+
+* Kernel: "A kernel is a critical component of every Operating System. It can be seen as a sort of bridge between the applications and the actual hardware of a device.."
+* Libraries: Libraries are chunks of code specially developed to activate key functions of the device (e.g. the camera or loudspeakers). Without certain libraries in your ROM, you risk the chance of your ROM not booting or working.
+* Bootloader: "A bootloader in general is the first bytes of code that a machine executes that will tell the bootsequence and will load the operating system into the RAM."
+* Recovery: A recovery is an 'application' that allows you to flash kernels, roms, mods and tweaks. It is also a method of installing and updating your ROM, partioning your SD card and many other OS-related things.
+* Radio: The radio is the "the lowest part of software layer" that "handles the GPS antenna, GSM antenna and fires up the CPU: everything the [bootloader] needs to run the OS".
